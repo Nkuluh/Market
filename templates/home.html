@@ -22,7 +22,15 @@
     <p class="lead" >The growing, administration, production, and sale of agricultural commodities, such as animals and crops, is known as agricultural business, also referred to as agribusiness. Farming, ranching, conservation, sales, and resource management are all included in the agricultural business sector. Agribusiness has evolved to meet and address the needs and issues of high-tech farming as technology has advanced and markets have become more global.
     </p>
     <h2 class= "text-center mt-2 mb-4" > Available package </h2>
-    <p > TODO - show the vegetables</p>
+    <p >
+      <div>
+      {%for veg in vegs%}
+        {% include 'veg.html'%}
+
+      
+      {%endfor%}
+      </div>
+    </p>
       <div style='text-align: center;'>
     <button class="btn btn-primary btn-lg"> Contact us </button>
       </div>
